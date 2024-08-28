@@ -204,7 +204,7 @@ button:active, .app-button:active, .action-button1:active, .action-button2:activ
     min-width: 130px; /* Smooth background color transition */
     text-align: center;
     margin-top: 100px;
-    margin-right:80px;
+    margin-right:100px;
     
 }
 .action-button4{
@@ -220,7 +220,7 @@ button:active, .app-button:active, .action-button1:active, .action-button2:activ
     transition: background-color 0.3s ease;
     min-width: 160px; /* Smooth background color transition */
     text-align: center;
-    margin-top: 300px;
+    margin-top: 200px;
     margin-left:250px;
 }
 .action-button5{
