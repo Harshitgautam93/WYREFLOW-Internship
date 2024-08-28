@@ -47,6 +47,22 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
 }
+/*HOVER_____________________________________________________________________________/*
+/* General hover effect for buttons */
+button, .app-button, .action-button1, .action-button2 {
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+button:hover, .app-button:hover, .action-button1:hover, .action-button2:hover {
+    background-color: #ff6666; /* Lighter red on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+}
+
+/* Active click effect */
+button:active, .app-button:active, .action-button1:active, .action-button2:active {
+    background-color: #cc0000; /* Darker red on click */
+    transform: scale(0.95); /* Slightly smaller when clicked */
+}
 
 /* Styling for the navbar logo */
 .navbar-logo {
@@ -90,7 +106,34 @@ nav ul li a {
     min-height: 400px; /* Ensure a minimum height for the section */
     background-color: #fff;
 }
+#section5 {
+    position: relative; /* Ensure relative positioning for any other elements */
+    background: url('Photos/6.png') no-repeat center center;
+    background-size:contain; /* Ensures the entire image fits inside the section */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for text readability */
+    padding: 2rem; /* Space inside the section */
+    min-height: 400px; /* Ensure a minimum height for the section */
+    background-color: #fff;
+}
 
+#section4 {
+    position: relative; /* Ensure relative positioning for any other elements */
+    background: url('Photos/4.png') no-repeat center center;
+    background-size:contain; /* Ensures the entire image fits inside the section */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for text readability */
+    padding: 2rem; /* Space inside the section */
+    min-height: 400px; /* Ensure a minimum height for the section */
+    background-color: #fff;
+}
+#section3 {
+    position: relative; /* Ensure relative positioning for any other elements */
+    background: url('Photos/3.png') no-repeat center center;
+    background-size:contain; /* Ensures the entire image fits inside the section */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for text readability */
+    padding: 2rem; /* Space inside the section */
+    min-height: 400px; /* Ensure a minimum height for the section */
+    background-color: #fff;
+}
 
 
 .app-button {
@@ -206,6 +249,170 @@ section {
     align-items: center; /* Center content horizontally */
     background: #fff;
 }
+.rectangle-container {
+    display: flex;
+    flex-direction: column; /* Arrange rectangles vertically */
+    align-items: center;    /* Center rectangles horizontally */
+    gap: 5rem;              /* Space between rectangles */
+    margin: 2rem 0;         /* Space above and below the container */
+}
+
+/* Individual rectangle styling */
+.rectangle1, .rectangle2 {
+    width: 700px;           /* Set width for the rectangle */
+    height: 200px;          /* Fixed height for each rectangle */
+    background-color: #ccc; /* Gray background color */
+    border-radius: 15px;    /* Rounded corners */
+    display: flex;
+    align-items: center;    /* Center content vertically */
+    position: relative;     /* Position relative for absolute positioning of images */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    overflow: hidden;       /* Ensure image does not overflow */
+}
+
+/* Image inside the rectangle */
+.rectangle-image {
+    position: absolute;
+    width: 80px;            /* Set width for the image */
+    height: 80px;           /* Set height for the image */
+    object-fit: cover;      /* Maintain aspect ratio and cover the image */
+}
+
+/* Specific styles for Rectangle 1 */
+.rectangle1 .rectangle-image {
+    left: 10px;            /* Align image to the right corner with some margin */
+    padding-top: 20px;  
+    width: 200px;
+    height: 200px;            /* Align image to the top corner with some margin */
+}
+
+/* Specific styles for Rectangle 2 */
+.rectangle2 .rectangle-image {
+    right: 10px;            /* Align image to the right corner with some margin */
+    padding-top: 20px;  
+    width: 200px;
+    height: 200px;            /* Align image to the top corner with some margin */
+}
+
+/* Content styling */
+.rectangle-content {
+    font-size: 1.5rem;      /* Font size for the text */
+    color: #333;            /* Text color */
+    margin-left: 100px;     /* Add margin to the left to avoid overlap with the image in Rectangle 1 */
+    margin-right: 100px;    /* Add margin to the right to avoid overlap with the image in Rectangle 2 */
+}
+.rectangle-container {
+    display: flex;
+    flex-direction: column; /* Arrange rectangles vertically */
+    align-items: center;    /* Center rectangles horizontally */
+    gap: 5rem;              /* Space between rectangles */
+    margin: 2rem 0;         /* Space above and below the container */
+}
+
+/* Individual rectangle styling */
+.rectangle1, .rectangle2 {
+    width: 700px;           /* Set width for the rectangle */
+    height: 200px;          /* Fixed height for each rectangle */
+    background-color: #ccc; /* Gray background color */
+    border-radius: 15px;    /* Rounded corners */
+    display: flex;
+    flex-direction: row;    /* Arrange content in a row */
+    align-items: flex-start; /* Align content at the top */
+    justify-content: space-between; /* Space between image and heading */
+    padding: 20px;          /* Padding around the content */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+.rectangle-container {
+    display: flex;
+    flex-direction: column; /* Arrange rectangles vertically */
+    align-items: center;    /* Center rectangles horizontally */
+    gap: 5rem;              /* Space between rectangles */
+    margin: 2rem 0;         /* Space above and below the container */
+}
+
+/* Individual rectangle styling */
+.rectangle1, .rectangle2 {
+    width: 700px;           /* Set width for the rectangle */
+    height: 200px;          /* Fixed height for each rectangle */
+    background-color: #ccc; /* Gray background color */
+    border-radius: 15px;    /* Rounded corners */
+    display: flex;          /* Flex layout for the rectangle */
+    align-items: center;    /* Center content vertically */
+    padding: 20px;          /* Padding inside the rectangle */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Image inside the rectangle */
+.rectangle-image {
+    width: 100px;           /* Set width for the image */
+    height: 100px;          /* Set height for the image */
+    object-fit: cover;      /* Maintain aspect ratio and cover the image */
+}
+
+/* Text content container */
+.text-content {
+    display: flex;
+    flex-direction: column; /* Stack heading and subheading vertically */
+    justify-content: center; /* Center the text vertically in its container */
+    flex: 1;                /* Take up remaining space in the rectangle */
+    margin-left: 20px;      /* Space between image and text */
+}
+
+/* Specific heading styles */
+.rectangle1-heading, .rectangle2-heading {
+    font-size: 1.5rem;      /* Font size for the heading */
+    color: #fff; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;           /* Text color */
+    margin: 0;              /* Remove default margin */
+}
+
+/* Specific subheading styles */
+.rectangle1-subheading, .rectangle2-subheading {
+    font-size: 1rem;        /* Font size for the subheading */
+    color: #555;            /* Text color for subheadings */
+    margin-top: 5px;        /* Space between heading and subheading */
+    margin-bottom: 0;       /* Remove bottom margin */
+}
+
+/* Specific styles for rectangle1 text content (right-aligned) */
+.rectangle1 .text-content {
+    text-align: right;      /* Right-align text in rectangle1 */
+}
+
+/* Specific styles for rectangle2 text content (left-aligned) */
+.rectangle2 .text-content {
+    text-align: left;       /* Left-align text in rectangle2 */
+    margin-left: 0;         /* Reset left margin */
+    margin-right: 20px;     /* Add right margin for spacing */
+}
+
+/* Image inside the rectangle */
+.rectangle-image {
+    width: 80px;            /* Set width for the image */
+    height: 80px;           /* Set height for the image */
+    object-fit: cover;      /* Maintain aspect ratio and cover the image */
+    margin: 0;              /* Remove any default margin */
+}
+
+/* Specific heading styles for each rectangle */
+.rectangle1-heading {
+    margin-left: auto;      /* Push the heading to the right in rectangle1 */
+    text-align: right;      /* Align text to the right */
+    font-size: 2rem;  
+    font-weight: bold;    /* Font size for the heading */
+    color: #333;            /* Text color */
+    align-self: flex-start; /* Align heading to the top */
+}
+
+.rectangle2-heading {
+    margin-right: auto;     /* Push the heading to the left in rectangle2 */
+    text-align: left;       /* Align text to the left */
+    font-size: 2rem;
+    font-weight:bold;      /* Font size for the heading */
+    color: #333;            /* Text color */
+    align-self: flex-start; /* Align heading to the top */
+}
+
 
 #section5 {
     position:absolute; /* Relative positioning for the section */
