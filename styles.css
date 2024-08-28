@@ -203,7 +203,7 @@ button:active, .app-button:active, .action-button1:active, .action-button2:activ
     transition: background-color 0.3s ease;
     min-width: 130px; /* Smooth background color transition */
     text-align: center;
-    margin-top: 250px;
+    margin-top: 200px;
     margin-right:100px;
     
 }
@@ -218,9 +218,9 @@ button:active, .app-button:active, .action-button1:active, .action-button2:activ
     font-size: 1rem; /* Font size */
     font-weight: bold; /* Bold font weight */
     transition: background-color 0.3s ease;
-    min-width: 180px; /* Smooth background color transition */
+    min-width: 160px; /* Smooth background color transition */
     text-align: center;
-    margin-top: 430px;
+    margin-top: 300px;
     margin-left:250px;
 }
 .action-button5{
