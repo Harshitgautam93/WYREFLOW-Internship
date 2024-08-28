@@ -191,6 +191,54 @@ button:active, .app-button:active, .action-button1:active, .action-button2:activ
     min-width: 120px; /* Smooth background color transition */
     text-align: center;
 }
+.action-button3{
+    background-color: #ff0000; /* Red background color */
+    color: #fff; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 1.5rem; /* Rounded corners */
+    padding: 0.5rem 0.75rem; /* Smaller padding */
+    height: 35px; /* Fixed height for square shape */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1rem; /* Font size */
+    font-weight: bold; /* Bold font weight */
+    transition: background-color 0.3s ease;
+    min-width: 120px; /* Smooth background color transition */
+    text-align: center;
+    margin-top: 220px;
+    margin-right:80px;
+    
+}
+.action-button4{
+    background-color: #ff0000; /* Red background color */
+    color: #fff; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 1.3rem; /* Rounded corners */
+    padding: 0.5rem 0.75rem; /* Smaller padding */
+    height: 35px; /* Fixed height for square shape */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1rem; /* Font size */
+    font-weight: bold; /* Bold font weight */
+    transition: background-color 0.3s ease;
+    min-width: 150px; /* Smooth background color transition */
+    text-align: center;
+    margin-top: 350px;
+    margin-left:200px;
+}
+.action-button5{
+    background-color: #ff0000; /* Red background color */
+    color: #fff; /* White text color */
+    padding: 0.5rem 0.75rem; /* Smaller padding */
+    border-radius: 0.5rem;
+    height: 35px; /* Fixed height for square shape */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1rem; /* Font size */
+    font-weight: bold; /* Bold font weight */
+    transition: background-color 0.3s ease;
+    min-width: 120px; /* Smooth background color transition */
+    text-align: center;
+    margin-right: 900px;
+    margin-bottom:100px;
+}
 
 
 /* General styling for section 1 */
