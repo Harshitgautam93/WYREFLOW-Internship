@@ -221,7 +221,7 @@ button:active, .app-button:active, .action-button1:active, .action-button2:activ
     min-width: 160px; /* Smooth background color transition */
     text-align: center;
     margin-top: 350px;
-    margin-left:230px;
+    margin-left:210px;
 }
 .action-button5{
     background-color: #ff0000; /* Red background color */
