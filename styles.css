@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background: url('Photos/marvin-meyer-SYTO3xs06fU-unsplash.jpg') no-repeat center center/cover;
+    background: rgba(255, 255, 255, 0.1); /* Transparent background */
     color: #fff;
     padding: 0.1rem 0; /* Reduced padding for a thinner navbar */
     text-align: end;
@@ -23,9 +23,8 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000; /* Ensures the navbar stays on top */
-    opacity: 0.8; /* Makes the navbar slightly transparent */
+    opacity: 0.8; /* Keeps the overall opacity of elements inside */
 }
-
 header h1 {
     font-size: 1.5rem; 
     margin-bottom: 1rem;
@@ -44,7 +43,7 @@ nav ul {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #ffff;
     text-decoration: none;
 }
 /*HOVER_____________________________________________________________________________/*
