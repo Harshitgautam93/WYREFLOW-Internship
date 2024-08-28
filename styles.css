@@ -1,0 +1,285 @@
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: url('Photos/marvin-meyer-SYTO3xs06fU-unsplash.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 0.1rem 0; /* Reduced padding for a thinner navbar */
+    text-align: end;
+    font-weight: bold;
+    font-size: medium;
+    height: 4em;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Ensures the navbar stays on top */
+    opacity: 0.8; /* Makes the navbar slightly transparent */
+}
+
+header h1 {
+    font-size: 1.5rem; 
+    margin-bottom: 1rem;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 1rem;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Styling for the navbar logo */
+.navbar-logo {
+    position: absolute;
+    top: 50%;
+    left: 1rem; /* Adjust this value as needed for padding */
+    transform: translateY(-50%);
+    height: 35px; /* Adjust the height of the logo */
+    width: auto; /* Maintain the aspect ratio */
+}
+
+#section1 {
+    position: relative; /* Make sure the positioning context is relative */
+    background: url('Photos/marvin-meyer-SYTO3xs06fU-unsplash.jpg') no-repeat center center/cover;
+    color: #fff; /* Ensure text is visible on the background image */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow to text for better readability */
+    overflow: hidden; /* Ensure the pseudo-element does not overflow */
+}
+
+/* Make sure content inside Section 1 is above the overlay */
+#section1 h2,
+#section1 p {
+    position: relative;
+    z-index: 2;
+}
+#section7 {
+    position: relative; /* Ensure relative positioning for any other elements */
+    background: url('Photos/7.png') no-repeat center center;
+    background-size:contain; /* Ensures the entire image fits inside the section */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for text readability */
+    padding: 2rem; /* Space inside the section */
+    min-height: 400px; /* Ensure a minimum height for the section */
+    background-color: #fff;
+}
+#section6 {
+    position: relative; /* Ensure relative positioning for any other elements */
+    background: url('Photos/6.png') no-repeat center center;
+    background-size:contain; /* Ensures the entire image fits inside the section */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for text readability */
+    padding: 2rem; /* Space inside the section */
+    min-height: 400px; /* Ensure a minimum height for the section */
+    background-color: #fff;
+}
+
+
+
+.app-button {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    background-color: #ff0000; /* Red background color */
+    color: #fff; /* White text color */
+    padding: 0.5rem 0.75rem; /* Smaller padding */
+    border-radius: 1.5rem; /* More curved edges */
+    text-decoration: none;
+    font-size: 1rem; /* Slightly smaller font size */
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    min-width: 100px; /* Smaller square shape */
+    height: 35px;
+    line-height: 2rem; /* Center text vertically */
+}
+
+/* Styling for the button container */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Space between buttons */
+    margin-top: 2rem; /* Space above the button container */
+}
+
+/* Styling for each button */
+.action-button1 {
+    background-color: #ff0000; /* Red background color */
+    color: #fff; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 1.5rem; /* Rounded corners */
+    padding: 0.5rem 0.75rem; /* Smaller padding */
+    height: 35px; /* Fixed height for square shape */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1rem; /* Font size */
+    font-weight: bold; /* Bold font weight */
+    transition: background-color 0.3s ease;
+    min-width: 120px; /* Smooth background color transition */
+    text-align: center;
+}
+
+.action-button2 {
+    border: none; /* Remove default border */
+    border-radius: 1.5rem; /* Rounded corners */
+    padding: 0.5rem 0.75rem; /* Smaller padding */
+    height: 35px; /* Fixed height for square shape */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1rem; /* Font size */
+    font-weight: bold; /* Bold font weight */
+    transition: background-color 0.3s ease;
+    min-width: 120px; /* Smooth background color transition */
+    text-align: center;
+}
+
+
+/* General styling for section 1 */
+#section1 {
+    position: relative; /* Position relative for overlay or additional styling */
+    color: #fff; /* Text color to ensure visibility on background */
+    text-align: center; /* Center align text horizontally */
+    padding: 4rem 2rem; /* Padding around content for spacing */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Styling for the <h1> tag in section 1 */
+#section1 h1 {
+    font-size: 4rem; /* Big font size */
+    font-weight: bold; /* Bold font weight */
+    z-index: 2; /* Ensures text is above any overlays */
+    position: relative; /* Maintain relative positioning */
+}
+
+#section1 h2 {
+    font-size: 3rem; /* Big font size */
+    font-weight: bold; /* Bold font weight */
+    z-index: 2; /* Ensures text is above any overlays */
+    position: relative; /* Maintain relative positioning */
+}
+
+/* Styling for the paragraph inside section 1 */
+#section1 p {
+    font-size: 1.5rem; /* Large font size for paragraph */
+    font-weight: bold; /* Make the paragraph text bold */
+    z-index: 2; /* Ensure it's above any overlays */
+    position: relative; /* Maintain relative positioning */
+    line-height: 1.6; /* Line height for readability */
+    max-width: 800px; /* Maximum width for the paragraph */
+}
+
+/* Optional: Style the section image to hide it if it's only decorative */
+#section1 img {
+    display: none; /* Hide the image if not needed */
+}
+
+main {
+    padding: 0;
+}
+
+section {
+    height: 100vh; /* Full viewport height for each section */
+    padding: 2rem; /* Padding for content inside the section */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    background: #fff;
+}
+
+#section5 {
+    position:absolute; /* Relative positioning for the section */
+    text-align: center; /* Centers the text horizontally */
+    padding: 20px 0; /* Add some padding to the top and bottom */
+}
+
+#section5 h1 {
+    margin: 0; /* Remove default margin */
+    padding: 20px 0; /* Optional: space around the heading */
+    font-size: 80px; /* Adjust size according to your preference */
+    line-height: 1.2; /* Adjust line height for spacing */
+    position: relative; /* Keeps it in the normal flow */
+    top: 0; /* Ensure it's aligned with the top padding of the section */
+}
+
+.rectangle1-container {
+    display: flex;
+    flex-direction: column; /* Arrange rectangles vertically */
+    align-items: center;    /* Center rectangles horizontally */
+    gap: 5rem;              /* Space between rectangles */
+    margin-top: 2rem; 
+    margin-bottom: 2rem;      /* Space above the container */
+}
+
+/* Individual rectangle styling */
+.rectangle1 {            /* Set width to occupy most of the section width */
+    width: 700px;       /* Maximum width for larger screens */
+    height: 200px;          /* Fixed height for each rectangle */
+    background-color: #ccc; /* Gray background color */
+    border-radius: 15px;    /* Rounded corners */
+    display: flex;
+    padding-bottom: 10vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;      /* Larger font size */
+    color: #333;            /* Text color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+.rectangle2-container {
+    display: flex;
+    flex-direction: column; /* Arrange rectangles vertically */
+    align-items: center;    /* Center rectangles horizontally */
+    gap: 5rem;              /* Space between rectangles */
+    margin-top: 5rem;       /* Space above the container */
+}
+
+/* Individual rectangle styling */
+.rectangle2 {
+    width: 700px;       /* Maximum width for larger screens */
+    height: 200px;          /* Fixed height for each rectangle */
+    background-color: #ccc; /* Gray background color */
+    border-radius: 15px;    /* Rounded corners */
+    display: flex;
+    padding-bottom: 10vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;      /* Larger font size */
+    color: #333;            /* Text color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    nav ul {
+        gap: 2rem;
+    }
+
+    footer {
+        padding: 3rem;
+    }
+}
