@@ -201,10 +201,10 @@ button:active, .app-button:active, .action-button1:active, .action-button2:activ
     font-size: 1rem; /* Font size */
     font-weight: bold; /* Bold font weight */
     transition: background-color 0.3s ease;
-    min-width: 120px; /* Smooth background color transition */
+    min-width: 130px; /* Smooth background color transition */
     text-align: center;
-    margin-top: 220px;
-    margin-right:80px;
+    margin-top: 250px;
+    margin-right:100px;
     
 }
 .action-button4{
@@ -218,10 +218,10 @@ button:active, .app-button:active, .action-button1:active, .action-button2:activ
     font-size: 1rem; /* Font size */
     font-weight: bold; /* Bold font weight */
     transition: background-color 0.3s ease;
-    min-width: 150px; /* Smooth background color transition */
+    min-width: 180px; /* Smooth background color transition */
     text-align: center;
-    margin-top: 350px;
-    margin-left:200px;
+    margin-top: 430px;
+    margin-left:250px;
 }
 .action-button5{
     background-color: #ff0000; /* Red background color */
@@ -301,7 +301,7 @@ section {
     flex-direction: column; /* Arrange rectangles vertically */
     align-items: center;    /* Center rectangles horizontally */
     gap: 5rem;              /* Space between rectangles */
-    margin: 2rem 0;         /* Space above and below the container */
+    margin: 4rem 0;         /* Space above and below the container */
 }
 
 /* Individual rectangle styling */
