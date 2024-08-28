@@ -297,6 +297,7 @@ section {
     background: #fff;
 }
 .rectangle-container {
+    margin-top :50px;
     display: flex;
     flex-direction: column; /* Arrange rectangles vertically */
     align-items: center;    /* Center rectangles horizontally */
