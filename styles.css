@@ -545,7 +545,7 @@ section {
     footer {
         padding: 3rem;
     }
-    section, #section1,#section2, #section3 , #section4,#section5,#section6,#section7{
+    section,#section2, #section3 , #section4,#section5,#section6,#section7{
         background-size: contain; /* Ensure the image fits within the section on smaller screens */
         min-height: 50vh; /* Adjust minimum height for smaller screens */
         padding: 1.5rem;
@@ -553,7 +553,7 @@ section {
 }
 /* Media query for very small screens */
 @media (max-width: 480px) {
-    section,#section1,#section2, #section3 , #section4,#section5,#section6,#section7 {
+    section,#section2, #section3 , #section4,#section5,#section6,#section7 {
         padding: 1rem; /* Less padding on very small screens */
         text-align: center; /* Center align text for better readability */
     }
@@ -568,4 +568,93 @@ section {
     footer {
         padding: 3rem;
     }
+    
+   
 }
+/* Responsive Design for screen widths 768px and above */
+@media (min-width: 768px) {
+    .rectangle1, .rectangle2 {
+        width: 80%;           /* Reduce width to 80% of the container */
+        padding: 1rem;        /* Reduce padding for better fit */
+        font-size: 1.2rem;    /* Slightly reduce font size for better readability */
+        text-align: left;     /* Align text to the left on larger screens */
+    }
+}
+
+/* Media query for screen widths between 480px and 768px */
+@media (max-width: 768px) and (min-width: 481px) {
+    .rectangle1, .rectangle2 {
+        width: 90%;           /* Set width to 90% of the container */
+        padding: 1rem;        /* Reduce padding for better fit */
+        font-size: 1.2rem;    /* Adjust font size for readability */
+        text-align: center;   /* Center text alignment */
+    }
+}
+
+/* Media query for very small screens (480px and below) */
+@media (max-width: 480px) {
+    .rectangle1, .rectangle2 {
+        width: 100%;          /* Full width for very small screens */
+        padding: 0.5rem;      /* Further reduce padding for small screens */
+        font-size: 1rem;      /* Further reduce font size */
+        text-align: center;   /* Center align text for readability */
+    }
+    .rectangle-image {
+        width: 60px;          /* Smaller image size for small screens */
+        height: 60px;         /* Maintain aspect ratio */
+    }
+    .text-content {
+        margin-left: 0;       /* Remove margins on small screens */
+        margin-right: 0;      /* Remove margins on small screens */
+    }
+}
+
+/* Media query for screens 768px and above */
+@media (min-width: 768px) {
+    .rectangle1, .rectangle2 {
+        flex-direction: row;    /* Arrange content in a row */
+        align-items: center;    /* Center content vertically */
+        padding: 20px;          /* Padding around the content */
+    }
+
+    .rectangle-image {
+        width: 40px;           /* Larger image size for bigger screens */
+        height: 40px;
+        margin: 0 20px;         /* Margin on sides */
+    }
+
+    .text-content {
+        text-align: left;       /* Align text to the left */
+    }
+
+    .rectangle1-heading, .rectangle2-heading {
+        font-size: 2rem;        /* Increase font size for the heading */
+    }
+
+    .rectangle1-subheading, .rectangle2-subheading {
+        font-size: 1.2rem;      /* Increase font size for the subheading */
+    }
+}
+
+/* Media query for very small screens 480px and below */
+@media (max-width: 480px) {
+    .rectangle1, .rectangle2 {
+        flex-direction: column; /* Stack content vertically */
+        padding: 10px;          /* Reduced padding */
+    }
+
+    .rectangle-image {
+        width: 40px;            /* Smaller image size for small screens */
+        height: 40px;
+        margin-bottom: 10px;    /* Margin below the image */
+    }
+
+    .rectangle1-heading, .rectangle2-heading {
+        font-size: 1.2rem;      /* Smaller font size for the heading */
+    }
+
+    .rectangle1-subheading, .rectangle2-subheading {
+        font-size: 0.9rem;      /* Smaller font size for the subheading */
+    }
+}
+
