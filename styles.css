@@ -556,6 +556,9 @@ section {
     section,#section2, #section3 , #section4,#section5,#section6,#section7 {
         padding: 1rem; /* Less padding on very small screens */
         text-align: center; /* Center align text for better readability */
+        background-size : contain ;
+        min-height:30vh;
+        
     }
     header h1 {
         font-size: 2.5rem;
