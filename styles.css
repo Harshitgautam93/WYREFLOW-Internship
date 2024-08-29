@@ -133,6 +133,14 @@ button:active, .app-button:active, .action-button1:active, .action-button2:activ
     min-height: 400px; /* Ensure a minimum height for the section */
     background-color: #fff;
 }
+#section2 {
+    position: relative; /* Ensure relative positioning for any other elements */
+    background-size:contain; /* Ensures the entire image fits inside the section */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for text readability */
+    padding: 2rem; /* Space inside the section */
+    min-height: 400px; /* Ensure a minimum height for the section */
+    background-color: #fff;
+}
 
 
 .app-button {
@@ -526,6 +534,29 @@ section {
 
 /* Responsive Design */
 @media (min-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    nav ul {
+        gap: 2rem;
+    }
+
+    footer {
+        padding: 3rem;
+    }
+    section, #section2, #section3 , #section4,#section5,#section6,#section7{
+        background-size: contain; /* Ensure the image fits within the section on smaller screens */
+        min-height: 50vh; /* Adjust minimum height for smaller screens */
+        padding: 1.5rem;
+    }
+}
+/* Media query for very small screens */
+@media (max-width: 480px) {
+    section,#section2, #section3 , #section4,#section5,#section6,#section7 {
+        padding: 1rem; /* Less padding on very small screens */
+        text-align: center; /* Center align text for better readability */
+    }
     header h1 {
         font-size: 2.5rem;
     }
