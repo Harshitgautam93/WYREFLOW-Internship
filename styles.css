@@ -246,7 +246,10 @@ button:active, .app-button:active, .action-button1:active, .action-button2:activ
     margin-right: 900px;
     margin-bottom:100px;
 }
-
+.rectangle-container{
+    min-width: fit-content;
+    min-height: fit-content;
+}
 
 /* General styling for section 1 */
 #section1 {
