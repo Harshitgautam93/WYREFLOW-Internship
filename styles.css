@@ -545,7 +545,7 @@ section {
     footer {
         padding: 3rem;
     }
-    section, #section1,#section2, #section3 , #section4,#section5,#section6,#section7{
+    section,#section2, #section3 , #section4,#section5,#section6,#section7{
         background-size: contain; /* Ensure the image fits within the section on smaller screens */
         min-height: 50vh; /* Adjust minimum height for smaller screens */
         padding: 1.5rem;
@@ -553,7 +553,7 @@ section {
 }
 /* Media query for very small screens */
 @media (max-width: 480px) {
-    section,#section1,#section2, #section3 , #section4,#section5,#section6,#section7 {
+    section,#section2, #section3 , #section4,#section5,#section6,#section7 {
         padding: 1rem; /* Less padding on very small screens */
         text-align: center; /* Center align text for better readability */
     }
